@@ -1,0 +1,159 @@
+.aboutPage {
+  padding: 3.5rem 1.5rem 5rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.pagePretitle {
+  color: var(--rf-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  color: var(--rf-dark-grey);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.pageLead {
+  font-size: 1.15rem;
+  color: var(--rf-mid-grey);
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.sectionBlock {
+  background-color: var(--rf-white);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius-lg);
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.sectionHeading {
+  font-size: 1.6rem;
+  color: var(--rf-blue);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 2px solid var(--rf-light-grey);
+  padding-bottom: 0.75rem;
+}
+
+.sectionParagraph {
+  font-size: 1.05rem;
+  color: var(--rf-dark-grey);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Community Guidelines List */
+.guidelinesList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.guidelineItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background-color: var(--rf-light-grey);
+  border-radius: var(--rf-radius-md);
+  border-left: 4px solid var(--rf-blue);
+}
+
+.guidelineNumber {
+  background-color: var(--rf-blue);
+  color: var(--rf-white);
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.guidelineContent h4 {
+  font-size: 1.1rem;
+  color: var(--rf-dark-grey);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.guidelineContent p {
+  color: var(--rf-mid-grey);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Contact Grid */
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.contactCard {
+  background-color: var(--rf-light-grey);
+  border-radius: var(--rf-radius-md);
+  padding: 1.5rem;
+  border: 1px solid var(--rf-border);
+}
+
+.contactCard h4 {
+  color: var(--rf-blue);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contactCard p {
+  color: var(--rf-dark-grey);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.contactCard a {
+  color: var(--rf-blue);
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .aboutPage {
+    padding: 2rem 1rem;
+  }
+
+  .sectionBlock {
+    padding: 1.5rem;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pageTitle {
+    font-size: 2rem;
+  }
+}

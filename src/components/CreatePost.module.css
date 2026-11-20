@@ -1,0 +1,124 @@
+.createPostCard {
+  background-color: var(--rf-white);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius-lg);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--rf-shadow-sm);
+  margin-bottom: 2.5rem;
+  transition: border-color var(--rf-transition-speed) ease;
+}
+
+.createPostCard:focus-within {
+  border-color: #cbd5e0;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.authorInitials {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--rf-blue);
+  color: var(--rf-white);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.authorMeta h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--rf-dark-grey);
+}
+
+.authorMeta p {
+  font-size: 0.8rem;
+  color: var(--rf-mid-grey);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid var(--rf-border);
+  border-radius: var(--rf-radius-md);
+  outline: none;
+  font-size: 0.95rem;
+  color: var(--rf-dark-grey);
+  line-height: 1.5;
+  resize: vertical;
+  background-color: #fafbfc;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.textarea:focus {
+  border-color: var(--rf-blue);
+  background-color: var(--rf-white);
+  box-shadow: var(--rf-shadow-focus);
+}
+
+.textareaError {
+  border-color: var(--rf-error) !important;
+  background-color: var(--rf-error-bg) !important;
+}
+
+.errorMessage {
+  color: var(--rf-error);
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  animation: errorFade 0.2s ease-in;
+}
+
+@keyframes errorFade {
+  from { opacity: 0; transform: translateY(-3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rf-border);
+}
+
+.noticeText {
+  font-size: 0.8rem;
+  color: var(--rf-text-muted);
+}
+
+.postButton {
+  background-color: var(--rf-blue);
+  color: var(--rf-white);
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.65rem 1.75rem;
+  border-radius: var(--rf-radius-md);
+  box-shadow: var(--rf-shadow-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background-color var(--rf-transition-speed) ease, transform var(--rf-transition-speed) ease;
+}
+
+.postButton:hover {
+  background-color: var(--rf-blue-hover);
+  transform: translateY(-1px);
+}
+
+.postButton:active {
+  transform: translateY(0);
+}

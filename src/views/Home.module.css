@@ -1,0 +1,256 @@
+.heroSection {
+  background: linear-gradient(135deg, var(--rf-blue) 0%, #001f5c 100%);
+  color: var(--rf-white);
+  padding: 5rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.institutionCrest {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 1rem;
+  border-radius: var(--rf-radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.crestIcon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #48bb78;
+}
+
+.heroTitle {
+  font-size: 3.25rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.heroTitleHighlight {
+  color: #90cdf4;
+}
+
+.heroSlogan {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 650px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+}
+
+.heroActions {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.primaryCta {
+  display: inline-block;
+  background-color: var(--rf-white);
+  color: var(--rf-blue);
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.9rem 2.2rem;
+  border-radius: var(--rf-radius-md);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: transform var(--rf-transition-speed) ease, box-shadow var(--rf-transition-speed) ease, background-color var(--rf-transition-speed) ease;
+}
+
+.primaryCta:hover {
+  background-color: #f7fafc;
+  color: var(--rf-blue-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.secondaryCta {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--rf-white);
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border-radius: var(--rf-radius-md);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  transition: all var(--rf-transition-speed) ease;
+}
+
+.secondaryCta:hover {
+  border-color: var(--rf-white);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--rf-white);
+}
+
+/* Feature Highlights */
+.featuresSection {
+  padding: 4.5rem 1.5rem;
+  background-color: var(--rf-light-grey);
+}
+
+.featuresContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.sectionPretitle {
+  color: var(--rf-blue);
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  color: var(--rf-dark-grey);
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.sectionSubtitle {
+  color: var(--rf-mid-grey);
+  font-size: 1.1rem;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.featureCard {
+  background-color: var(--rf-white);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius-lg);
+  padding: 2.25rem 2rem;
+  box-shadow: var(--rf-shadow-sm);
+  transition: transform var(--rf-transition-speed) ease, box-shadow var(--rf-transition-speed) ease, border-color var(--rf-transition-speed) ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--rf-shadow-lg);
+  border-color: #cbd5e0;
+}
+
+.cardIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--rf-radius-md);
+  background-color: var(--rf-blue-light);
+  color: var(--rf-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--rf-dark-grey);
+  margin-bottom: 0.85rem;
+}
+
+.cardDescription {
+  color: var(--rf-mid-grey);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Call to Action Banner */
+.ctaBanner {
+  background-color: var(--rf-blue-subtle);
+  border-top: 1px solid var(--rf-border);
+  border-bottom: 1px solid var(--rf-border);
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+}
+
+.ctaBannerContent {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.ctaBannerTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--rf-blue);
+  margin-bottom: 0.75rem;
+}
+
+.ctaBannerText {
+  color: var(--rf-mid-grey);
+  font-size: 1.05rem;
+  margin-bottom: 1.75rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1023px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroSection {
+    padding: 3.5rem 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSlogan {
+    font-size: 1.05rem;
+  }
+
+  .heroActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primaryCta, .secondaryCta {
+    text-align: center;
+    width: 100%;
+  }
+
+  .featuresSection {
+    padding: 3rem 1rem;
+  }
+}

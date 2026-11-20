@@ -1,0 +1,183 @@
+.previewCard {
+  background-color: var(--rf-white);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius-lg);
+  padding: 2rem;
+  box-shadow: var(--rf-shadow-md);
+  position: sticky;
+  top: 5.5rem;
+  transition: all var(--rf-transition-speed) ease;
+  animation: slideInPreview 0.4s ease-out;
+}
+
+@keyframes slideInPreview {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.previewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rf-border);
+}
+
+.previewLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--rf-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.liveDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #38a169;
+  animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+.profileAvatarRow {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatarCircle {
+  width: 68px;
+  height: 68px;
+  border-radius: var(--rf-radius-full);
+  background: linear-gradient(135deg, var(--rf-blue) 0%, #004ecc 100%);
+  color: var(--rf-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  box-shadow: 0 4px 10px rgba(0, 48, 135, 0.25);
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.avatarCircle:hover {
+  transform: scale(1.05);
+}
+
+.profileIdentity h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--rf-dark-grey);
+  margin-bottom: 0.2rem;
+  word-break: break-word;
+}
+
+.placeholderText {
+  color: var(--rf-text-muted);
+  font-style: italic;
+}
+
+.campusBadge {
+  display: inline-block;
+  font-size: 0.825rem;
+  color: var(--rf-blue);
+  background-color: var(--rf-blue-light);
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--rf-radius-full);
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.studentNumberDisplay {
+  font-size: 0.85rem;
+  color: var(--rf-mid-grey);
+  margin-top: 0.15rem;
+}
+
+.detailSection {
+  margin-bottom: 1.25rem;
+}
+
+.detailLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--rf-mid-grey);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.04em;
+}
+
+.bioBlock {
+  background-color: var(--rf-light-grey);
+  padding: 1rem;
+  border-radius: var(--rf-radius-md);
+  font-size: 0.925rem;
+  color: var(--rf-dark-grey);
+  line-height: 1.5;
+  min-height: 70px;
+  word-break: break-word;
+}
+
+/* Interests Tags */
+.tagsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: var(--rf-blue);
+  color: var(--rf-white);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--rf-radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  animation: tagAppear 0.2s ease-out;
+}
+
+@keyframes tagAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.noInterests {
+  color: var(--rf-text-muted);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.previewFooterNotice {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--rf-border);
+  font-size: 0.8rem;
+  color: var(--rf-text-muted);
+  text-align: center;
+}

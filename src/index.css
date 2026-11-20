@@ -1,0 +1,118 @@
+:root {
+  /* Richfield Institutional Brand Colors */
+  --rf-blue: #003087;
+  --rf-blue-hover: #002261;
+  --rf-blue-light: #e6eefc;
+  --rf-blue-subtle: #f0f5ff;
+  
+  /* Neutral Color Palette */
+  --rf-white: #ffffff;
+  --rf-light-grey: #f5f5f5;
+  --rf-card-bg: #ffffff;
+  --rf-border: #e2e8f0;
+  --rf-border-hover: #cbd5e1;
+  --rf-mid-grey: #555555;
+  --rf-dark-grey: #2d3748;
+  --rf-text-muted: #718096;
+  
+  /* Functional Accents */
+  --rf-error: #c53030;
+  --rf-error-bg: #fff5f5;
+  --rf-error-border: #feb2b2;
+  --rf-success: #22543d;
+  --rf-success-bg: #f0fff4;
+  --rf-success-border: #9ae6b4;
+  
+  /* Shadows & Elevations */
+  --rf-shadow-sm: 0 1px 3px rgba(0, 48, 135, 0.08);
+  --rf-shadow-md: 0 4px 6px -1px rgba(0, 48, 135, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --rf-shadow-lg: 0 10px 15px -3px rgba(0, 48, 135, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --rf-shadow-focus: 0 0 0 3px rgba(0, 48, 135, 0.2);
+
+  /* Spacing and Radius */
+  --rf-radius-sm: 4px;
+  --rf-radius-md: 8px;
+  --rf-radius-lg: 12px;
+  --rf-radius-full: 9999px;
+
+  /* Typography */
+  --rf-font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  --rf-transition-speed: 0.2s;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--rf-font-family);
+  background-color: var(--rf-light-grey);
+  color: var(--rf-dark-grey);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Links and buttons baseline */
+a {
+  color: var(--rf-blue);
+  text-decoration: none;
+  transition: color var(--rf-transition-speed) ease;
+}
+
+a:hover {
+  color: var(--rf-blue-hover);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all var(--rf-transition-speed) ease;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+/* Smooth route view transition */
+@keyframes fadeInView {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.viewContainer {
+  animation: fadeInView 0.3s ease-out;
+  flex: 1;
+}
+
+/* Responsive Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

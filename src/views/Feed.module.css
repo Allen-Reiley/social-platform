@@ -1,0 +1,92 @@
+.feedView {
+  padding: 3.5rem 1.5rem 5rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.feedHeader {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.pretitle {
+  color: var(--rf-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.875rem;
+  margin-bottom: 0.4rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--rf-dark-grey);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--rf-mid-grey);
+  font-size: 1.05rem;
+}
+
+.postsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedDivider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--rf-text-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.feedDivider::before,
+.feedDivider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--rf-border);
+}
+
+.emptyState {
+  background-color: var(--rf-white);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius-lg);
+  padding: 3.5rem 2rem;
+  text-align: center;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.emptyState h3 {
+  font-size: 1.4rem;
+  color: var(--rf-dark-grey);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.emptyState p {
+  color: var(--rf-mid-grey);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 767px) {
+  .feedView {
+    padding: 2rem 1rem 3.5rem 1rem;
+  }
+
+  .title {
+    font-size: 1.85rem;
+  }
+}

@@ -1,0 +1,264 @@
+.profileView {
+  padding: 3.5rem 1.5rem 5rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Empty fallback state */
+.emptyStateCard {
+  background-color: var(--rf-white);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius-lg);
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.emptyStateIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.emptyStateTitle {
+  font-size: 1.85rem;
+  color: var(--rf-dark-grey);
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.emptyStateText {
+  color: var(--rf-mid-grey);
+  font-size: 1.05rem;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.registerCtaButton {
+  display: inline-block;
+  background-color: var(--rf-blue);
+  color: var(--rf-white);
+  font-weight: 700;
+  padding: 0.85rem 2rem;
+  border-radius: var(--rf-radius-md);
+  box-shadow: var(--rf-shadow-sm);
+  transition: all var(--rf-transition-speed) ease;
+}
+
+.registerCtaButton:hover {
+  background-color: var(--rf-blue-hover);
+  color: var(--rf-white);
+  transform: translateY(-2px);
+  box-shadow: var(--rf-shadow-md);
+}
+
+/* Profile Card Container */
+.profileCard {
+  background-color: var(--rf-white);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius-lg);
+  box-shadow: var(--rf-shadow-md);
+  overflow: hidden;
+}
+
+.cardBanner {
+  background: linear-gradient(135deg, var(--rf-blue) 0%, #001f5c 100%);
+  height: 140px;
+  position: relative;
+}
+
+.cardBody {
+  padding: 0 2.5rem 2.5rem 2.5rem;
+  position: relative;
+}
+
+.avatarWrapper {
+  position: relative;
+  top: -50px;
+  margin-bottom: -35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.avatarInitials {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--rf-blue) 0%, #004ecc 100%);
+  color: var(--rf-white);
+  border: 4px solid var(--rf-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.25rem;
+  font-weight: 800;
+  box-shadow: var(--rf-shadow-md);
+}
+
+.verifiedBadge {
+  background-color: var(--rf-success-bg);
+  color: var(--rf-success);
+  border: 1px solid var(--rf-success-border);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--rf-radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.profileName {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--rf-dark-grey);
+  margin-bottom: 0.25rem;
+}
+
+.profileMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: var(--rf-mid-grey);
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+}
+
+.metaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Statistics Row */
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--rf-border);
+  border-bottom: 1px solid var(--rf-border);
+  margin-bottom: 2rem;
+}
+
+.statBox {
+  text-align: center;
+  padding: 0.75rem;
+  background-color: var(--rf-light-grey);
+  border-radius: var(--rf-radius-md);
+  border: 1px solid var(--rf-border);
+}
+
+.statNumber {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--rf-blue);
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--rf-mid-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+}
+
+/* Section Blocks */
+.infoSection {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--rf-blue);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bioContent {
+  background-color: var(--rf-light-grey);
+  border-radius: var(--rf-radius-md);
+  padding: 1.25rem 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--rf-dark-grey);
+  border-left: 4px solid var(--rf-blue);
+}
+
+.interestsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.interestBadge {
+  background-color: var(--rf-blue);
+  color: var(--rf-white);
+  padding: 0.45rem 1rem;
+  border-radius: var(--rf-radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.profileActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--rf-radius-md);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all var(--rf-transition-speed) ease;
+}
+
+.feedBtn {
+  background-color: var(--rf-blue);
+  color: var(--rf-white);
+}
+
+.feedBtn:hover {
+  background-color: var(--rf-blue-hover);
+  color: var(--rf-white);
+}
+
+.editBtn {
+  background-color: var(--rf-light-grey);
+  color: var(--rf-dark-grey);
+  border: 1px solid var(--rf-border);
+}
+
+.editBtn:hover {
+  background-color: #e2e8f0;
+}
+
+@media (max-width: 767px) {
+  .profileView {
+    padding: 2rem 1rem;
+  }
+
+  .cardBody {
+    padding: 0 1.25rem 1.5rem 1.25rem;
+  }
+
+  .profileName {
+    font-size: 1.75rem;
+  }
+
+  .statsRow {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
